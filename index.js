@@ -9,6 +9,7 @@ function formatFullName(firstName, lastName){
     //return lastName + ", " + firstName
 }
 
+
 let resultName = formatFullName("arshpreet","kaur")
 // let result = formatFullName()
 console.log(resultName)
@@ -23,3 +24,24 @@ function calculateTotalCost(price, quantity, taxRate){
 
 const resultCost = calculateTotalCost(25,2,0.25); 
 console.log(resultCost);
+
+let age = 19
+let isEmployed = true
+
+function checkEligibility(age, isEmployed){
+
+
+    if(age>=18 && isEmployed){
+        return 'eligible 18+ and employed';
+    } else if (age>=18 || !isEmployed){
+        return 'conditionally eligible 18+ but unemployed';
+    } else{
+        return 'uneligible';
+    }
+    
+} 
+
+console.log(checkEligibility(19, true));
+
+
+
